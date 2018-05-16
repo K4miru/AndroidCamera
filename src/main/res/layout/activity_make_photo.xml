@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/RL"
+    tools:context=".Camera.MakePhotoActivity">
+
+    <FrameLayout
+        android:id="@+id/frameLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:id="@+id/bottomLayout"
+        android:layout_weight="9"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorTransparent"
+        android:gravity="bottom">
+        <ImageView android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/checkedbox"/>
+        <ImageView android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/camera"
+            android:id="@+id/makePhoto"/>
+        <ImageView android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/check"
+            android:id="@+id/savePhoto"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:id="@+id/topLayout"
+        android:layout_weight="9"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorTransparent">
+        <ImageView android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/checkedbox"
+            android:id="@+id/pictureSizes"/>
+        <ImageView android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/checkedbox"
+            android:id="@+id/whiteBalance"/>
+        <ImageView android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/checkedbox"
+            android:id="@+id/colorEffects"/>
+        <ImageView android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/checkedbox"
+            android:id="@+id/exposureCompensation"/>
+    </LinearLayout>
+</RelativeLayout>

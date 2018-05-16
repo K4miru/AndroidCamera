@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.a4ic1.projektkoncowopolroczny.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2">
+    <LinearLayout
+        android:background="#999999"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewPager"
+        android:orientation="horizontal">
+    </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:src="@drawable/camera"
+                android:layout_width="120dp"
+                android:layout_height="120dp" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/albums"
+                android:layout_width="120dp"
+                android:layout_height="120dp" />
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:src="@drawable/kolaz"
+        android:layout_width="120dp"
+        android:layout_height="120dp" />
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:src="@drawable/network"
+        android:layout_width="120dp"
+        android:layout_height="120dp" />
+    </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+    <include
+        layout="@layout/activity_network"
+        />
+</RelativeLayout>
